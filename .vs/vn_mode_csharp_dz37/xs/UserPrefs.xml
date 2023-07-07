@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{E55046AA-0E00-4FB3-9AC6-40DE1536983C}|Default">
+  <MonoDevelop.Ide.ItemProperties.vn__mode__csharp__dz37 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="vn_mode_csharp_dz37/Program.cs">
+    <Files>
+      <File FileName="vn_mode_csharp_dz37/Program.cs" Line="16" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="vn_mode_csharp_dz37">
+            <Node name="vn_mode_csharp_dz37" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

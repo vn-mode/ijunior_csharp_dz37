@@ -13,27 +13,27 @@ class Program
         MergeWithoutDuplicates(array1, result);
         MergeWithoutDuplicates(array2, result);
 
-        foreach (string item in result)
+        foreach (string element in result)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(element);
         }
     }
 
     static void MergeWithoutDuplicates(string[] array, List<string> mergedList)
     {
-        if (array == null)
+        if (array is null)
         {
             throw new ArgumentNullException(nameof(array));
         }
 
-        if (mergedList == null)
+        if (mergedList is null)
         {
             throw new ArgumentNullException(nameof(mergedList));
         }
 
         foreach (string element in array)
         {
-            if (!mergedList.Contains(element))
+            if (mergedList.Contains(element) == false)
             {
                 mergedList.Add(element);
             }
