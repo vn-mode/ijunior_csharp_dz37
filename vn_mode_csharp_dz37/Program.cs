@@ -10,7 +10,8 @@ class Program
 
         List<string> result = new List<string>();
 
-        MergeWithoutDuplicates(array1, array2, result);
+        MergeWithoutDuplicates(array1, result);
+        MergeWithoutDuplicates(array2, result);
 
         foreach (string item in result)
         {
@@ -18,34 +19,23 @@ class Program
         }
     }
 
-    static void MergeWithoutDuplicates(string[] array1, string[] array2, List<string> mergedList)
+    static void MergeWithoutDuplicates(string[] array, List<string> mergedList)
     {
-        if (mergedList == null)
-        {
-            throw new ArgumentNullException(nameof(mergedList));
-        }
-
-        AddUniqueItems(mergedList, array1);
-        AddUniqueItems(mergedList, array2);
-    }
-
-    static void AddUniqueItems(List<string> list, string[] array)
-    {
-        if (list == null)
-        {
-            throw new ArgumentNullException(nameof(list));
-        }
-
         if (array == null)
         {
             throw new ArgumentNullException(nameof(array));
         }
 
+        if (mergedList == null)
+        {
+            throw new ArgumentNullException(nameof(mergedList));
+        }
+
         foreach (string element in array)
         {
-            if (list.Contains(element) == false)
+            if (!mergedList.Contains(element))
             {
-                list.Add(element);
+                mergedList.Add(element);
             }
         }
     }
