@@ -8,12 +8,12 @@ class Program
         string[] array1 = { "1", "2", "1" };
         string[] array2 = { "3", "2" };
 
-        List<string> result = new List<string>();
+        List<string> unionElements = new List<string>();
 
-        MergeWithoutDuplicates(array1, result);
-        MergeWithoutDuplicates(array2, result);
+        MergeWithoutDuplicates(array1, unionElements);
+        MergeWithoutDuplicates(array2, unionElements);
 
-        foreach (string element in result)
+        foreach (string element in unionElements)
         {
             Console.WriteLine(element);
         }
